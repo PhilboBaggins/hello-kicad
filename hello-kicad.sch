@@ -239,6 +239,10 @@ Connection ~ 6850 4700
 NoConn ~ 4400 4700
 Wire Wire Line
 	4400 4350 4400 4700
-Text Notes 4200 4700 2    50   ~ 0
-Shield not connected because this is a USB slave device. I’m not\n100% sure this is the “correct” way to do this but since we’re only\ndealing with low frequency signals (DC) here I think this is right.
+Text Notes 1350 4500 0    50   ~ 0
+## Shield\n\nShield not connected because this is a USB slave device. I’m not\n100% sure this is the “correct” way to do this but since we’re only\ndealing with low frequency signals (DC) here I think this is right.
+Text Notes 4500 3000 0    50   ~ 0
+TODO: Should I being doing anything with the D+ and D- signals?
+Text Notes 1350 5600 0    50   ~ 0
+## ID pin\n\nMy understanding is that the ID pin would be connected to GND on the \ndevice side **of the cable**, therefore I shouldn’t connect it to GND on \nthis board. I could try to read from the ID pin to know that I’m on the device \nside …. but I don’t think I want to do that; this board is meant to be super simple.\n\nSee https://electronics.stackexchange.com/questions/35462/why-does-micro-usb-2-0-have-5-pins-when-the-a-type-only-has-4
 $EndSCHEMATC
